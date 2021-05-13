@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div id="contenedor">
+        <form id="miFormulario">
+
+            <label>Nombre Completo:</label><br />
+            <input type="text" id="itNombre" class="campo" /> <br/>
+
+            <label>E-mail:</label><br />
+            <input type="text" id="itMail" class="campo" /> <br/>
+
+            <label>RUT:</label><br />
+            <input type="text" id="itRut" class="campo" /> <br/>
+
+            <label>N° de telefono (opcional):</label><br />
+            <input type="text" id="itCell" class="campo" /> <br/>
+
+            <label>Ciudad de residencia:</label><br />
+            <input type="text" id="itCity" class="campo" /> <br/>
+
+            <label>¿Le gustaría participar en un ONG? ¿Por qué?:</label><br />
+            <input type="text" id="itONG" class="campo" /> <br/>
+
+            <input type="submit" id="bEnviar" value="Enviar datos" class="boton" />
+            <input type="submit" id="bClean" value="Limpiar campos" class="boton" />
+            
+        </form>
+    </div>
 </body>
 </html>
