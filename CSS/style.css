@@ -29,15 +29,3 @@ body {
     color: white;
     padding: 10px;
 }
-
-.errores {
-    background: #bb0a01;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: white;
-    display: none;
-    font-size: 14px;
-    margin-top: -80px;
-    margin-left: 340px;
-    padding: 10px;
-    position: absolute;
-}

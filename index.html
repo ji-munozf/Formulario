@@ -12,28 +12,31 @@
     <div id="contenedor">
         <form id="miFormulario">
 
-            <label>Nombre Completo:</label><br />
-            <input type="text" id="itNombre" class="campo" /> <br/>
+            <label>Nombre Completo:</label><br/>
+            <input type="text" id="itNombre" class="campo" pattern="[a-zA-Z0-9]+" required/><br/>
+            <span class="error" id="errores"></span>
 
             <label>E-mail:</label><br />
-            <input type="text" id="itMail" class="campo" /> <br/>
+            <input type="email" name="email" required class="campo"/><br/>
 
             <label>RUT:</label><br />
-            <input type="text" id="itRut" class="campo" /> <br/>
+            <input type="text" id="itRut" name="rut" required oninput="checkRut(this)" class="campo"/><br/>
 
             <label>N° de telefono (opcional):</label><br />
-            <input type="text" id="itCell" class="campo" /> <br/>
+            <input type="text" id="itCell" class="campo"/><br/>
 
             <label>Ciudad de residencia:</label><br />
-            <input type="text" id="itCity" class="campo" /> <br/>
+            <input type="text" id="itCity" class="campo" pattern="[a-zA-Z0-9]+" required/><br/>
 
             <label>¿Le gustaría participar en un ONG? ¿Por qué?:</label><br />
-            <input type="text" id="itONG" class="campo" /> <br/>
+            <input type="text" id="itONG" class="campo" minlength="50" type="text" required/><br/>
 
             <input type="submit" id="bEnviar" value="Enviar datos" class="boton" />
-            <input type="submit" id="bClean" value="Limpiar campos" class="boton" />
+            <input type="submit" id="bClean" value="Limpiar campos" class="boton" onclick="c()"/>
             
         </form>
     </div>
+    <script type="text/javascript" src="js/Validar_rut.js"></script>
+    <script type="text/javascript" src="js/Limpiar _campos.js"></script>
 </body>
 </html>
